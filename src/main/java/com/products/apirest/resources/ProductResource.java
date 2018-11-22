@@ -57,4 +57,16 @@ public class ProductResource {
 	public Product updateProduct(@RequestBody Product product){
 		return productRepository.save(product);	
 	}
+	
+	@GetMapping("/products/TESTfindAll")
+	@ApiOperation(value = "TEST findALL")
+	public List<Product> findAllTest(){
+		return productRepository.findAllProducts();
+	}
+	
+	@GetMapping("/products({name})")
+	@ApiOperation(value = "Returns a single product with the respective name given")
+	public Product productFindByName(@PathVariable(value = "name") String name){
+		return productRepository.findByName(name);
+	}
 }
