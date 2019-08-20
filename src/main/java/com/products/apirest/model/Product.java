@@ -14,7 +14,7 @@ import io.swagger.annotations.Api;
 
 import javax.persistence.GenerationType;
 @Entity
-@Table(name = "PRODUCT")
+@Table(name = "PRODUCTS")
 public class Product implements Serializable{
 
 	private static final long serialVersionUID = 1L;

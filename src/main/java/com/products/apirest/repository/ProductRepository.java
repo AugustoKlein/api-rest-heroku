@@ -13,6 +13,6 @@ public interface ProductRepository extends JpaRepository<Product, Long>{
 	
 	Product findByName(String name);
 	
-	@Query("SELECT p FROM Product p")
-	List<Product> findAllProducts();
+//	@Query("SELECT p FROM Product p")
+//	List<Product> findAllProducts();
 }
